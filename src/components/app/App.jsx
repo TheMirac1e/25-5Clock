@@ -102,10 +102,10 @@ class App extends Component {
 
         return (
             <div className="App">
-                <h1 className="mb-5">25 + 5 Clock</h1>
+                <h1 className="mb-5 text-white">25 + 5 Clock</h1>
                 <div className="flex justify-around gap-3 mb-5">
                     <div className="flex flex-col items-center">
-                        <h3 className="w-max text-center mb-2" id="break-label">Break Length</h3>
+                        <h3 className="w-max text-center mb-2 text-white" id="break-label">Break Length</h3>
                         <div className="flex">
                             <button onClick={() => this.handleCount(-1, 'break')} id="break-decrement">-1</button>
                             <div className="flex items-center text-4xl px-5" id="break-length">{breakCount}</div>
@@ -113,7 +113,7 @@ class App extends Component {
                         </div>
                     </div>
                     <div className="flex flex-col items-center">
-                        <h3 className="w-max text-center mb-2" id="session-label">Session Length</h3>
+                        <h3 className="w-max text-center mb-2 text-white" id="session-label">Session Length</h3>
                         <div className="flex">
                             <button onClick={() => this.handleCount(-1, 'session')} id="session-decrement">-1</button>
                             <div className="flex items-center text-4xl px-5 text-center" id="session-length">{sessionCount}</div>
@@ -123,7 +123,7 @@ class App extends Component {
                 </div>
                 <div className="border-2 rounded-2xl p-2 mb-5">
                     <h3 id="timer-label">{status}</h3>
-                    <div className="text-6xl" id="time-left">{this.convertTime(secondsCount)}</div>
+                    <div className="text-6xl text-white" id="time-left">{this.convertTime(secondsCount)}</div>
                 </div>
                 <div className="flex gap-3 justify-center">
                     <button onClick={() => this.startTimer()} id="start_stop">Play/Stop</button>
